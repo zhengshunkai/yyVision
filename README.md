@@ -5,3 +5,6 @@ Project class: DIP
 
 Project 2: Dijkstra. GA routing.
 Project class: Optimization
+
+Project 3: B-spline
+Project class: B-spline
