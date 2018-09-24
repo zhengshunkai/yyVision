@@ -2,6 +2,7 @@
 # Author: Yang Yu
 # Date: 2017/12/28
 # Description: Get template from image
+# A version that does not use for
 
 import numpy as np # For array operation
 from meshop import meshgridi
