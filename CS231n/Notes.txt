@@ -1,3 +1,0 @@
-Assignments from CS231n Standford
-Refit to accommodate pyzo/windows
-Dataset installed
