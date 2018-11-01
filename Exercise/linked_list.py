@@ -5,7 +5,7 @@
 
 class node:
     
-    data = [] # Date within the node
+    data = [] # Data within the node
     nextptr = -1 # Pointer
     
     def __init__(self,data=[]):
@@ -20,10 +20,10 @@ class node:
     
 class linked_list:
     
-    node0 = node() # First node
+    node0 = [] # First node
     nodeNum = 0 # Linked list length
     
-    def __init__(self,node0):
+    def __init__(self,node0=[]):
         self.node0 = node0
         # Check initilized list lengh
         self.nodeNum = self.list_length()
@@ -109,31 +109,32 @@ class linked_list:
             print(nodetmp.data)
 
 ## Routines
-# Construct linked list
-ll_length = 10
-
-node0 = node(0)
-node_prev = node0
-for ii in range(ll_length-1):
-    node_new = node(ii+1)
-    node_prev.nextptr = node_new
-    node_prev = node_new
-
-ll = linked_list(node0)
-ll.print1(5)
-ll.printA()
-
-node_new = node(100)
-ll.append(node_new)
-
-node_insert = node(1000)
-newidx = 7
-ll.insert(node_insert,newidx)
-ll.printA()
-
-ll.delete(8)
-ll.printA()
-
-ll.delete(-1)
-ll.delete(0)
-ll.printA()
+if __name__ == '__main__':
+    # Construct linked list
+    ll_length = 10
+    
+    node0 = node(0)
+    node_prev = node0
+    for ii in range(ll_length-1):
+        node_new = node(ii+1)
+        node_prev.nextptr = node_new
+        node_prev = node_new
+    
+    ll = linked_list(node0)
+    ll.print1(5)
+    ll.printA()
+    
+    node_new = node(100)
+    ll.append(node_new)
+    
+    node_insert = node(1000)
+    newidx = 7
+    ll.insert(node_insert,newidx)
+    ll.printA()
+    
+    ll.delete(8)
+    ll.printA()
+    
+    ll.delete(-1)
+    ll.delete(0)
+    ll.printA()
